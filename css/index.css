@@ -1,0 +1,75 @@
+/*
+    File: index.css
+    Jason Downing
+    Contact: jason@downing.io
+    MIT Licensed - see http://opensource.org/licenses/MIT for details.
+    Anyone may freely use this code. Just don't sue me if it breaks stuff.
+    Created: September 3rd, 2015.
+    Last Updated: May 1, 2017.
+
+    This file contains CSS classes / IDs used to override the Creative Bootstrap Theme
+*/
+
+.text-small {
+  font-size: 100%;
+}
+
+.text-blue {
+  color: blue;
+}
+
+/*  For the GitHub Section link
+    These styles make the GitHub Section header appear white all the time,
+    unless hovered on. Makes for a better style, and clearer that it is a link.
+    From: https://www.w3schools.com/css/css_link.asp
+    and: https://www.w3schools.com/css/tryit.asp?filename=trycss_link2;
+*/
+.text-white {
+  color: white;
+}
+
+/* Link color when it is unvisited */
+a.text-white:link  {
+  color: white;
+}
+
+/* Link color after being clicked on and visited */
+a.text-white:visited {
+  color: white;
+}
+
+/* Link color while being hovered on */
+a.text-white:hover {
+  color: blue;
+}
+
+/* Link color the moment it is clicked */
+a.text-white:active {
+  color: white;
+}
+
+.min-padding {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.min-padding-top {
+  padding-top: 2em;
+  padding-bottom: 0em;
+}
+
+/*
+    This class is a fix for a bug I noticed on certain screen resolutions.
+    When the width was between ~768px and ~991px (small devices) I noticed that
+    the 2x2 rows were not looking right - the first row of 2 squares looked fine
+    but the the next row was all messed up, one square was higher than the other.
+
+    It turns out if 2 or 3 squares share the same height but one square doesn't,
+    then the alignment is thrown off on the grid.
+
+    This small padding increase fixes the issue by making all 4 squares the same
+    height.
+*/
+.div-padding-fix {
+  padding-bottom: 2em;
+}
